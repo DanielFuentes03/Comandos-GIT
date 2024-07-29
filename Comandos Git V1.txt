@@ -26,9 +26,9 @@ git branch -m nombrenuevo -->Cambiar nombre de la rama
 
 git branch -D cabecera --> borra una rama
 
-**git branch -r **= se muestran todas las ramas remotas
+git branch -r --> se muestran todas las ramas remotas
 
-git branch -a = se muestran todas las ramas tanto locales como remotas
+git branch -a --> se muestran todas las ramas tanto locales como remotas
 
 git pull origin master --> trae los cambios del servidor online
 
@@ -54,47 +54,45 @@ un archivo .gitignore adentro(.jpg) ignora los archivos
 
 git log --oneline -->> veo todo el log sin el las lineas. de todas las ramas
 
+git log --stat --> para ver estadisticas del ultimo cambios
+
 git cherry-pick (hash o el id del commit) --> Solo trae un commit de otra rama
 
 git commit --amend ---> para agregar los cambios al ultimo commit
 
-git log --stat --> para ver estadisticas del ultimo cambios
+git commit --amend --author="Daniel Fuentes <daniel.fuentes0396@gmail.com>" --no-edit
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-git reflog --> guarda todos los cambios aunque decidas borrarlos, al borrar un cambio lo que estás haciendo 
-sólo es actualizar la punta del branch, para gestionar éstas puntas existe un mecanismo llamado registros 
+git reflog --> guarda todos los cambios aunque decidas borrarlos, al borrar un cambio lo que estás haciendo
+sólo es actualizar la punta del branch, para gestionar éstas puntas existe un mecanismo llamado registros
 de referencia o reflogs.
 
 git reset -- (SOFT/HARD) +(hash)  --> te regresa a un punto del commit(hash) borrando todo lo que hiciste
-después de ese commit, la diferencia de HARD y SOFT es que SOFT te permite guardar lo que este en staying 
+después de ese commit, la diferencia de HARD y SOFT es que SOFT te permite guardar lo que este en staying
 y HARD rsetea todo.
 
 git grep color --> use la palabra color(busca la palabra que le pases como parametro) en el código
 
 git grep -c la --> cuantas veces use la palabra la en el código
 
-git log-S “cabecera” --> cuantas veces use la palabra cabecera en
-todos los commits.
+git log-S “cabecera” --> cuantas veces use la palabra cabecera en todos los commits.
 
 git shortlog -sn = muestra cuantos commit han hecho cada miembros del equipo.
 
-git shortlog -sn --all = muestra cuantos commit han hecho cada miembros del equipo hasta los que 
-han sido eliminado
+git shortlog -sn --all = muestra cuantos commit han hecho cada miembros del equipo hasta los que han sido eliminado
 
-git shortlog -sn --all --no-merge = muestra cuantos commit han hecho cada miembros quitando los eliminados 
-sin los merges
+git shortlog -sn --all --no-merge = muestra cuantos commit han hecho cada miembros quitando los eliminados sin los merges
 
 git blame ARCHIVO = muestra quien hizo cada cosa linea por linea
 
 git COMANDO --help = muestra como funciona el comando.
 
-git blame ARCHIVO -Llinea_inicial,linea_final= muestra quien hizo cada cosa linea por linea 
-indicándole desde que linea ver ejemplo -L35,50
+git blame ARCHIVO -Llinea_inicial,linea_final= muestra quien hizo cada cosa linea por linea indicándole desde que linea ver ejemplo -L35,50
 
-ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+ssh-keygen -t rsa -b 4096 -C "youremail@example.com" -->Genera llave privada y pública
 
-alias arbolito="git log --all --graph --decorate --oneline" --> Crear un alias para un comando 
+alias arbolito="git log --all --graph --decorate --oneline" --> Crear un alias para un comando
 
 --Para Salir de ediciones
 :wq
@@ -105,12 +103,13 @@ Esc + Shift +z+z
 
 Q
 
-git commit --amend --author="Daniel Fuentes <daniel.fuentes0396@gmail.com>" --no-edit
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Documentación de git commmit amend
 
 https://www.logilax.com/git-how-to-change-commit-author/
 
-----------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 Este tutorial era parte del curso pasado así que decidí simplemente actualizar los comandos que enseña en Freddy en este curso, espero les pueda ser útil. 😉
 
 ⚙️ CONFIGURACIONES
